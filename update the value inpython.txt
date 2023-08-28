@@ -1,0 +1,38 @@
+Microsoft Windows [Version 10.0.22621.2215]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\vamsi>py
+Python 3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> d={'s1':9,'s2':9.3,'s3':9.5,'s4':8.6,'s5':9.8}
+>>> d.values()
+dict_values([9, 9.3, 9.5, 8.6, 9.8])
+>>> stocks={'apple':20,'banana':14,'mango':10,'pineapple':0}
+>>> new={'mango':5,'kiwi':5,'pineapple':10}
+>>> #update the mango quality now
+>>> stocks['mango']+=new['mango']
+>>> stocks
+{'apple': 20, 'banana': 14, 'mango': 15, 'pineapple': 0}
+>>> fruit = 'kiwi'
+>>> # if fruit not there
+>>> if fruit not in stocks:
+...   stocks[fruit] = new[fruit]
+...   print(f'{fruit} added into stocks qty is - {stocks[fruit]}')
+... elif fruit in stock and stocks[fruit] <= 20:
+...   stock[fruit] += new[fruit]
+...   print(f'{fruit} qty is updated - {stocks[fruit]}')
+... else:
+...   print(f'{fruit} quantity ({stocks[fruit]}) is more. Move to Store room')
+...
+kiwi added into stocks qty is - 5
+>>> stocks
+{'apple':20,'banana':14,'mango':10,'pineapple':0,'kiwi':5}
+>>> s="i am vamsi dhar"
+>>> s.upper()
+'I AM VAMSI DHAR'
+>>> p="i aM vamsI dhar"
+>>> p.lower()
+'i am vamsi dhar'
+>>> s.capitalize()
+'I am vamsi dhar'
+>>>
